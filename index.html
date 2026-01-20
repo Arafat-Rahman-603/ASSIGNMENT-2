@@ -18,14 +18,14 @@
     <header
       class="bg-[#1A0B2E] border-b border-b-[#412567] fixed w-full top-0 left-0 z-50"
     >
-      <nav class="flex items-center justify-between py-3.5 px-[145px]">
+      <nav class="flex items-center justify-between py-3.5 md:px-[145px] px-5">
         <h1 class="text-[2.5rem] font-bold text-white">
           Tech<span
             class="bg-[linear-gradient(1deg,rgba(247,217,71,1)_11%,rgba(251,9,180,1)_41%,rgba(145,0,248,1)_80%)] bg-clip-text text-transparent [-webkit-text-fill-color:transparent]"
             >Wave
           </span>
         </h1>
-        <ul class="flex gap-5 text-[1.1rem]">
+        <ul class=" gap-5 text-[1.1rem] md:flex hidden">
           <li class="">
             <a
               href="#"
@@ -49,10 +49,11 @@
           </li>
         </ul>
         <button
-          class="cursor-pointer hover:scale-105 active:scale-95 transition-all py-2 rounded-full px-5 bg-[linear-gradient(15deg,rgba(247,217,71,1)_0%,rgba(251,9,180,1)_51%,rgba(145,0,248,1)_100%)] h-max text-[1rem] text-white font-semibold"
+          class="md:flex hidden gap-1 justify-center items-center cursor-pointer hover:scale-105 active:scale-95 transition-all py-2 rounded-full px-5 bg-[linear-gradient(15deg,rgba(247,217,71,1)_0%,rgba(251,9,180,1)_51%,rgba(145,0,248,1)_100%)] h-max text-[1rem] text-white font-semibold"
         >
           Subscribe <i class="fa-solid fa-arrow-right"></i>
         </button>
+        <img src="./assets/hamburger-menu.png" alt="" class="md:hidden block w-[24px] h-[24px] cursor-pointer" />
       </nav>
     </header>
     <main class="pt-[88px]">
@@ -72,10 +73,10 @@
           </div>
 
           <div>
-            <h1 class="text-[3.8rem] text-center font-extrabold text-white">
+            <h1 class="md:text-[3.8rem] text-[2.5rem] text-center font-extrabold text-white">
               TechWave
             </h1>
-            <p class="text-[#FFFFFF]">
+            <p class="text-[#FFFFFF] text-center ">
               Your daily dose of tech insights, productivity hacks, and personal
               growth
             </p>
@@ -97,33 +98,33 @@
         </div>
       </section>
 
-      <section class="bg-[#1A0B2E] px-15 py-15">
+      <section class="bg-[#1A0B2E] md:px-15 px-10 py-15">
         <div
           class="text-center flex flex-col gap-4 border-b border-b-[#412567] pb-10"
         >
-          <h1 class="text-white text-center text-[2.5rem] font-bold">
+          <h1 class="text-white text-center sm:text-[2.5rem] text-[2rem] font-bold">
             About the Podcast
           </h1>
           <div>
-            <p class="text-[#FFFFFF]">
+            <p class="text-[#FFFFFF] text-[.8rem] mt-2">
               TechWave is your go-to podcast for staying ahead in the fast-paced
               world of technology.
             </p>
-            <p class="text-[#FFFFFF]">
+            <p class="text-[#FFFFFF] text-[.8rem]">
               We break down complex topics into digestible insights, explore
               productivity strategies that actually work,
             </p>
-            <p class="text-[#FFFFFF]">
+            <p class="text-[#FFFFFF] text-[.8rem]">
               and share stories of personal growth from industry leaders.
             </p>
           </div>
-          <p class="text-[#FFFFFF] mt-10 mb-10">
+          <p class="text-[#FFFFFF] text-[.8rem] mt-10 mb-10">
             Join thousands of young professionals and tech enthusiasts who start
             their day with TechWave.
           </p>
         </div>
         <div
-          class="flex justify-between items-center p-15 py-20 flex-wrap gap-10"
+          class="flex justify-between items-center md:px-15 py-20 flex-wrap gap-10"
         >
           <div class="flex flex-col gap-1">
             <h1 class="text-[#00FF88] text-center text-[2.5rem] font-bold">
@@ -154,12 +155,12 @@
           </div>
         </div>
       </section>
-      <section class="bg-[#230E3D] px-15 py-15 text-center">
-        <h1 class="font-bold text-[2.5rem] text-white">Why Choose TechWave</h1>
+      <section class="bg-[#230E3D] md:px-15 px-5 py-15 text-center">
+        <h1 class="font-bold text-[2rem] mb-10 md:mb-0 md:text-[2.5rem] text-white">Why Choose TechWave</h1>
 
         <div class="flex gap-5 flex-wrap lg:flex-nowrap">
           <div
-            class="w-1/3 bg-[#33154F] rounded-3xl p-12 flex justify-center flex-col items-start gap-4"
+            class="md:w-1/3 w-full bg-[#33154F] rounded-3xl p-12 flex justify-center flex-col items-start gap-4"
           >
             <img src="./assets/headphone.png" alt="" class="" />
             <h2 class="text-white text-[1.5rem] font-bold">
@@ -171,7 +172,7 @@
               for optimal listening across all devices and platforms.
             </p>
           </div>
-          <div class="w-2/3 flex flex-col gap-8 flex-wrap lg:flex-nowrap">
+          <div class="md:w-2/3 w-full flex flex-col gap-8 flex-wrap lg:flex-nowrap">
             <div
               class="p-5 bg-[#33154F] rounded-3xl p-12 flex justify-center flex-col items-start gap-4"
             >
@@ -200,7 +201,7 @@
 
         <div class="flex gap-4 flex-wrap lg:flex-nowrap mt-5">
           <div
-            class="w-2/3 p-5 bg-[#33154F] rounded-3xl p-12 flex justify-center flex-col items-start gap-4"
+            class="md:w-2/3 w-full p-5 bg-[#33154F] rounded-3xl p-12 flex justify-center flex-col items-start gap-4"
           >
             <img src="./assets/1.png" alt="" class="w-[60px] h-[60px]" />
             <h2 class="text-white text-[1.6rem] font-bold">Regular Updates</h2>
@@ -211,7 +212,7 @@
           </div>
 
           <div
-            class="w-1/3 p-5 bg-[#33154F] rounded-3xl p-6 flex justify-center flex-col items-start gap-4"
+            class="md:w-1/3 w-full p-5 bg-[#33154F] rounded-3xl p-6 flex justify-center flex-col items-start gap-4"
           >
             <img src="./assets/resource.png" alt="" />
             <h2 class="text-white text-[1.6rem] font-bold">Regular Updates</h2>
@@ -223,8 +224,8 @@
         </div>
       </section>
 
-      <section class="bg-[#1A0B2E] px-15 py-15">
-        <h1 class="text-white text-[2.5rem] text-center font-bold">
+      <section class="bg-[#1A0B2E] md:px-15 px-5 py-15">
+        <h1 class="text-white md:text-[2.5rem] text-[2rem] text-center font-bold">
           Featured Episodes
         </h1>
         <div class="flex mt-10 gap-6 flex-wrap justify-center lg:flex-nowrap">
@@ -244,7 +245,7 @@
               "
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
-              class="h-[220px]"
+              class="h-[220px] rounded-t-3xl  "
             ></iframe>
             <div class="px-5 pb-5">
               <h2 class="text-white text-[1.35rem] font-semibold">
@@ -281,7 +282,7 @@
               "
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
-              class="h-[220px]"
+              class="h-[220px] rounded-t-3xl"
             ></iframe>
             <div class="px-5 pb-5">
               <h2 class="text-white text-[1.35rem] font-semibold">
@@ -318,7 +319,7 @@
               "
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
-              class="h-[220px]"
+              class="h-[220px] rounded-t-3xl"
             ></iframe>
             <div class="px-5 pb-5">
               <h2 class="text-white text-[1.35rem] font-semibold">
@@ -345,7 +346,7 @@
             Meet the Host
           </h1>
           <div
-            class="p-5 bg-[#33154F] rounded-3xl p-12 flex items-start gap-8 mt-10 flex-wrap lg:flex-nowrap"
+            class="p-5 bg-[#33154F] rounded-3xl md:p-12 flex items-start gap-8 mt-10 flex-wrap lg:flex-nowrap"
           >
             <img
               src="./assets/host.png"
@@ -353,10 +354,10 @@
               class="mx-auto rounded-full w-[200px] h-[200px] object-cover"
             />
             <div class="flex flex-col items-start">
-              <h2 class="text-white text-[2rem] font-semibold mt-4">
+              <h2 class="text-white text-[2rem] self-center md:self-start font-semibold mt-4">
                 Alex Kumart
               </h2>
-              <p class="text-[#FFFFFF] text-start mt-2">
+              <p class="text-[#FFFFFF] text-center sm:text-start text-[0.7] mt-2">
                 Tech entrepreneur, productivity expert, and lifelong learner.
                 Alex has been in the tech industry for over 10 years, working
                 with startups and Fortune 500 companies. Through TechWave, Alex
@@ -364,7 +365,7 @@
                 anyone looking to grow in tech.
               </p>
 
-              <div class="flex gap-3 mt-5">
+              <div class="flex gap-3 mt-5 self-center md:self-start">
                 <div
                   class="w-10 h-10 rounded-full transition-all cursor-pointer hover:border-3 active:border-0 border border-[#533C72] flex items-center justify-center"
                 >
@@ -379,7 +380,7 @@
                   class="w-10 h-10 rounded-full transition-all cursor-pointer hover:border-3 active:border-0 border border-[#533C72] flex items-center justify-center"
                 >
                   <img
-                    src="./assets/twitter.png"
+                    src="./assets/x.png"
                     class="w-5 h-5"
                     alt=""
                   />
@@ -411,18 +412,39 @@
       </section>
     </main>
     <footer class="bg-[url('./assets/footer-bg.png')] bg-no-repeat bg-cover bg-center px-15 py-10">
-      <div
-        class="flex flex-col lg:flex-row justify-between items-center border-b border-b-[#412567] pb-10"
-      >
-         <h1 class="text-[2.5rem] font-bold text-white">
+         <h1 class="text-[3rem] font-bold text-white text-center">
    Tech<span
      class="bg-[linear-gradient(1deg,rgba(247,217,71,1)_11%,rgba(251,9,180,1)_41%,rgba(145,0,248,1)_80%)] bg-clip-text text-transparent [-webkit-text-fill-color:transparent]"
      >Wave
    </span>
  </h1>
-      </div>
-      <div class="mt-5 text-center">
-        <p class="text-[#FFFFFF]">
+
+ <div class="flex flex-wrap gap-6 justify-center mt-6">
+    <div class="flex gap-1 justify-center items-center ">
+        <img src="./assets/spotify.png" alt="">
+        <p class="text-[#FFFFFF]">Spotify</p>
+    </div>
+
+     <div class="flex gap-1 justify-center items-center ">
+     <img src="./assets/apple-podcast.png" alt="">
+     <p class="text-[#FFFFFF]">Apple Podcasts</p>
+ </div>
+
+
+  <div class="flex gap-1 justify-center items-center ">
+     <img src="./assets/youtube-podcast.png" alt="">
+     <p class="text-[#FFFFFF]">YouTube</p>
+ </div>
+
+
+  <div class="flex gap-1 justify-center items-center ">
+     <img src="./assets/twitter.png" alt="">
+     <p class="text-[#FFFFFF]">Twitter</p>
+ </div>
+ </div>
+
+      <div class="mt-10 text-center">
+        <p class="text-[#FAFAFA] text-[0.9rem]">
          © 2026 TechWave Podcast. All rights reserved.
         </p>
       </div>
