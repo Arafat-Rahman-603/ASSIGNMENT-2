@@ -1,13 +1,186 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>ASSIGNMENT-2</title>
-</head>
-<body>
-    <h2 class="text-4xl">kk</h2>
-</body>
+  </head>
+  <body>
+    <header
+      class="bg-[#1A0B2E] border-b border-b-[#412567] fixed w-full top-0 left-0 z-50"
+    >
+      <nav class="flex items-center justify-between py-3.5 px-[145px]">
+        <h1 class="text-[2.5rem] font-bold text-white">
+          Tech<span
+            class="bg-[linear-gradient(1deg,rgba(247,217,71,1)_11%,rgba(251,9,180,1)_41%,rgba(145,0,248,1)_80%)] bg-clip-text text-transparent [-webkit-text-fill-color:transparent]"
+            >Wave
+          </span>
+        </h1>
+        <ul class="flex gap-5 text-[1.1rem]">
+          <li class="">
+            <a
+              href="#"
+              class="text-white hover:border-1 rounded-full px-3 py-1 transition-all active:scale-95 hover:scale-105"
+              >About</a
+            >
+          </li>
+          <li class="">
+            <a
+              href="#"
+              class="text-white hover:border-1 rounded-full px-3 py-1 transition-all active:scale-95 hover:scale-105"
+              >Episodes</a
+            >
+          </li>
+          <li class="">
+            <a
+              href="#"
+              class="text-white hover:border-1 rounded-full px-3 py-1 transition-all active:scale-95 hover:scale-105"
+              >Host</a
+            >
+          </li>
+        </ul>
+        <button
+          class="cursor-pointer hover:scale-105 active:scale-95 transition-all py-2 rounded-full px-5 bg-[linear-gradient(15deg,rgba(247,217,71,1)_0%,rgba(251,9,180,1)_51%,rgba(145,0,248,1)_100%)] h-max text-[1rem] text-white font-semibold"
+        >
+          Subscribe <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </nav>
+    </header>
+    <main class="pt-[88px]">
+      <section
+        class="flex flex-col bg-[url('./assets/hero-bg.png')] bg-no-repeat bg-cover bg-center h-[760px] flex items-center justify-center"
+      >
+        <div class="flex flex-col items-center gap-10">
+          <div
+            class="text-center bg-[url('./assets/hero-circle.png')] h-[350px] w-[350px] bg-no-repeat bg-cover bg-center"
+          >
+            <div
+              class="bg-[#00FF88] text-[1rem] font-semibold px-3 py-1 w-max rounded-full relative top-2 right-[-240px]"
+            >
+              NEW
+            </div>
+            <img src="./assets/microphone.png" alt="" class="mx-auto pt-13" />
+          </div>
+
+          <div>
+            <h1 class="text-[3.8rem] text-center font-extrabold text-white">
+              TechWave
+            </h1>
+            <p class="text-[#FFFFFF]">
+              Your daily dose of tech insights, productivity hacks, and personal
+              growth
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <button
+              class="cursor-pointer hover:scale-105 active:scale-95 transition-all py-2 rounded-full px-5 bg-[linear-gradient(15deg,rgba(247,217,71,1)_0%,rgba(251,9,180,1)_51%,rgba(145,0,248,1)_100%)] h-max text-[1rem] text-white font-semibold flex items-center gap-2"
+            >
+              <img src="./assets/spotify.png" alt="" class="" />
+              Listen on Spotify
+            </button>
+            <button
+              class="cursor-pointer hover:scale-105 active:scale-95 transition-all py-2 rounded-full px-5 border-[1.4px] border-[#00FF88] h-max text-[1rem] text-[#00FF88] font-semibold flex items-center gap-2"
+            >
+              <img src="./assets/message.png" alt="" class="" />
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#1A0B2E] px-15 py-15">
+        <div
+          class="text-center flex flex-col gap-4 border-b border-b-[#412567] pb-10"
+        >
+          <h1 class="text-white text-center text-[2.5rem] font-bold">
+            About the Podcast
+          </h1>
+          <div>
+            <p class="text-[#FFFFFF]">
+              TechWave is your go-to podcast for staying ahead in the fast-paced
+              world of technology.
+            </p>
+            <p class="text-[#FFFFFF]">
+              We break down complex topics into digestible insights, explore
+              productivity strategies that actually work,
+            </p>
+            <p class="text-[#FFFFFF]">
+              and share stories of personal growth from industry leaders.
+            </p>
+          </div>
+          <p class="text-[#FFFFFF] mt-10 mb-10">
+            Join thousands of young professionals and tech enthusiasts who start
+            their day with TechWave.
+          </p>
+        </div>
+        <div class="flex justify-between items-center p-15 py-20 flex-wrap gap-10">
+          <div class="flex flex-col gap-1">
+            <h1 class="text-[#00FF88] text-center text-[2.5rem] font-bold">
+              150K+
+            </h1>
+            <p class="text-[#FFFFFF]">Monthly Listeners</p>
+          </div>
+
+        <div class="flex flex-col gap-1">
+          <h1 class="text-[#00FF88] text-center text-[2.5rem] font-bold">
+            200+
+          </h1>
+          <p class="text-[#FFFFFF]">Episodes Published</p>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <h1 class="text-[#00FF88] text-center text-[2.5rem] font-bold">
+            4.9★
+          </h1>
+          <p class="text-[#FFFFFF]">Average Rating</p>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <h1 class="text-[#00FF88] text-center text-[2.5rem] font-bold">
+            50+
+          </h1>
+          <p class="text-[#FFFFFF]">Industry Experts</p>
+        </div>
+        </div>
+      </section>
+      <section class="bg-[#230E3D] px-15 py-15 text-center">
+         <h1 class="font-bold text-[2.5rem] text-white">Why Choose TechWave</h1>
+
+
+
+         <div class="flex">
+            <div class="w-1/3 p-5 bg-[#33154F] rounded-3xl px-10 flex flex-col items-start">
+                <img src="./assets/headphone.png" alt="">
+                <h2 class="text-white text-[1.6rem] font-bold mb-3">
+                 Premium Audio Quality                
+                </h2>
+                <p class="text-[#FFFFFF] text-start">
+                    Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.
+                </p>
+            </div>
+            <div class="w-2/3 p-5">
+                <h2 class="text-white text-[1.6rem] font-bold mb-3">
+                Engaging Content
+                </h2>
+                <p class="text-[#FFFFFF]">
+                Enjoy well-researched episodes that are both informative and
+                entertaining.
+                </p>
+            </div>
+         </div>
+
+
+
+      </section>
+    </main>
+  </body>
 </html>
